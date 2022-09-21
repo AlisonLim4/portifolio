@@ -1,0 +1,12 @@
+.button {
+  background-color: var(--button);
+  color: var(--white);
+  border-radius: 0.5em;
+  padding: 10px 15px;
+  font-size: var(--label);
+  width: max-content;
+  font-size: 1.4rem;
+}
+.button:hover {
+  background-color:#263B50 ;
+}

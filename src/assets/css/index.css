@@ -1,0 +1,46 @@
+:root {
+  /* colors */
+  --main-background:#01080E;
+  --card-background: #011221;
+  --background:#011627;
+  --lines: #1E2D3D;
+  --white: #ffffff ;
+  --ice: #E5E9F0;
+  
+  --primary: #607B96;
+  --blue: #4D5BCE;
+  --green: #43D9AD;
+  --orange: #FEA55F;
+  --salmon: #E99287;
+  --pink: #C98BDF;
+  --button: #1C2B3A;
+
+  /* fonts */
+  --headline: 6.2rem;
+  --subheadline: 3.2rem;
+  --body-text: 1.8rem;
+  --label: 1.6rem;
+  --code-snippet: 1.4rem;
+}
+html {
+  background-color:var(--main-background) ;
+  color: var(--primary);
+}
+.link_active{
+  color: white;
+}
+.hiden {
+  display: none;
+}
+.salmon {
+  color: var(--salmon)
+}
+.green {
+  color: var(--green);
+}
+.blue {
+  color: var(--blue);
+}
+.orange{
+  color:var(--orange);
+}

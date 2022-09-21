@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  backdrop-filter: blur(3px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index:5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(68,110,184);
+  background: linear-gradient(0deg, rgba(68,110,184,0.9727241238292192) 0%, rgba(27,28,66,1) 57%);
+}
+.container > svg {
+  position: absolute;
+  top: 1.6rem;
+  right:1.6rem ;
+}
+.teste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.hidden {
+  opacity: 0;
+}

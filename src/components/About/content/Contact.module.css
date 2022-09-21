@@ -1,0 +1,23 @@
+.contact form {
+  padding: 20px 0px 0px 60px;
+    /* border: 1px solid red; */
+}
+.contact form, label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact form input,
+.contact form textarea {
+  background-color: #011221;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  width: 70%;
+  height: 40px;
+  color: #465E77;
+}
+.contact form textarea{
+  font-size: 1.6rem;
+height: 145px;
+resize: none;
+}

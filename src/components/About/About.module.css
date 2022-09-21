@@ -1,0 +1,164 @@
+.container {
+  display: flex;
+  height: calc(100% - 106px);
+}
+.left_side {
+  display: flex;
+  /* padding-left: 20px; */
+  width: 20.22%;
+  height: 100%;
+  border-right: 1px solid var(--lines);
+
+}
+/* .lateral_icons {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  width: 70px;
+  height: 100%;
+  padding-top: 20px;
+  border-right: 1px solid var(--lines);
+} */
+.personal_info {
+  width: 100%;
+}
+.personal_title {
+  display: flex;
+  align-content: center;
+  padding: 10px;
+  gap: 10px;
+  color: var(--white);
+  border-bottom: 1px solid var(--lines);
+
+}
+.personal_title svg {
+  margin-top: 3px;
+}
+.topics_folder {
+  border-bottom: 1px solid var(--lines);
+  padding-bottom: 20px;
+  /* border: 1px solid green; */
+}
+.topic {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 16px;
+  margin-top: 20px;
+  /* border: 1px solid red; */
+}
+.topic p {
+  cursor: pointer;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  padding-left: 15px;
+
+}
+.email {
+ display: flex;
+ gap: 10px;
+}
+.email p {
+  cursor: pointer;
+}
+.tel{
+  display: flex;
+  gap: 10px;
+}
+.tel a {
+  color: var(--blue);
+  transition: all ease .2s;
+}
+.tel a:hover {
+  color: var(--green);
+}
+/* Middle */
+.middle {
+  width: 40%;
+  border-right: 1px solid var(--lines);
+  /* border: 1px solid red; */
+}
+.title_active {
+  width: 100%;
+  padding: 10px 15px;
+  padding-right: 40px;
+  border-bottom: 1px solid var(--lines);
+}
+.content {
+  padding-left: 40px;
+  height: 92.2%;
+}
+.content_container {
+  width: 95%;
+  height: 100%;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+
+/* ////////////////////////////////////////////////////////// */
+.contact form {
+  padding: 20px 0px 0px 60px;
+    /* border: 1px solid red; */
+}
+.contact form, label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact form input,
+.contact form textarea {
+  background-color: #011221;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  width: 70%;
+  height: 40px;
+  color: #465E77;
+}
+.contact form textarea{
+  font-size: 1.6rem;
+height: 145px;
+resize: none;
+}
+
+
+/* //REPSONSIVITY */
+@media(max-width: 1150px) {
+  .left_side{ width: 50%;
+
+  }
+  .right {
+   display: none;
+  } 
+  .middle {
+    width: 100%;
+  }
+ }
+
+ @media(max-width: 750px) {
+.left_side {
+  width: 30%;
+} 
+}
+@media(max-width: 700px) {
+  .container {
+    flex-direction: column;
+    overflow: scroll;
+  }
+  .left_side {
+    width: 100%;
+    
+  }
+  .topics_folder {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+}
