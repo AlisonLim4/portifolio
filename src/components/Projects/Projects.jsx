@@ -19,7 +19,7 @@ const Projects = () => {
               stack="_front-end"
               image={cloneflix_thumb}
               alt="Netflix thumbnail"
-              description="Clone da paxina inicial da Netflix, desenvolvida com React, buscando dados através de API externa. (não é possivel reproduzir os titulos)"
+              description="Clone da página inicial da Netflix, desenvolvida com React, buscando dados através de API externa. (não é possivel reproduzir os titulos)"
               link="https://netflix-clone-b82icwbn8-alisonlim4.vercel.app/"
             />{' '}
           </div>

@@ -45,6 +45,6 @@
   }
   .card_container {
     width: 90%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
 }

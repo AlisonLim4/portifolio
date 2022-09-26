@@ -54,6 +54,6 @@ padding-left: 25px;
   .card{
     width: 90%;
     /* height: 80%; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 }
