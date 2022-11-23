@@ -1,19 +1,19 @@
-import React from 'react';
-import styles from './Home.module.css';
-import { Typewriter } from 'react-simple-typewriter';
-import foto from '../../assets/img/Perfil.jpg';
+import React from "react";
+import styles from "./Home.module.css";
+import { Typewriter } from "react-simple-typewriter";
+import foto from "../../assets/img/Perfil.jpg";
 
 const Home = () => {
   return (
     <section className={styles.container}>
       <div className={styles.text_side}>
         <div>
-          <p className={styles.hi}>Hi. I am</p>
+          <p className={styles.hi}>Olá. Eu sou </p>
           <h1 className={styles.title}>Alison Lima</h1>
           <p className={styles.stack}>
-            &gt;{' '}
+            &gt;{" "}
             <Typewriter
-              words={['Front-end developer']}
+              words={["Desenvolvedor Front-end"]}
               cursor
               cursorStyle="|"
               typeSpeed={70}
@@ -25,25 +25,18 @@ const Home = () => {
         </div>
         <div>
           <p className={styles.coment}>
-            // I craft interactive and beautiful web apps, and I love what I do
+            // Eu desenvolvo aplicações web interativas e responsivas, e eu amo
+            o que faço.
           </p>
-          <p className={styles.coment}>// View some of my personal projects!</p>
+          <p className={styles.coment}>
+            // Fique a vontade para conferir meus projetos pessoais!
+          </p>
           <p className={styles.snippets}>
-            {/* <span className={styles.const}>const</span>{' '} */}
-            {/* <span className={styles.githublink}>githubLink</span> = */}
-            {/* <span className={styles.link}>
-              {' '}
-              "
-              <a href="https://github.com/AlisonLim4" target="blank">
-                https://github.com/AlisonLim4
-              </a>
-              “
-            </span> */}
-            <span className={styles.const}>This website</span>{' '}
-            <span className={styles.githublink}>are under</span>
+            <span className={styles.const}>Esta página</span>{" "}
+            <span className={styles.githublink}>está</span>
             <span className={styles.link}>
-              {' '}
-              "<span>CONSTRUCTION</span>“
+              {" "}
+              "<span> EM CONSTRUÇÃO</span>“
             </span>
           </p>
         </div>

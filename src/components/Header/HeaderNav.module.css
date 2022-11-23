@@ -13,20 +13,20 @@
   display: flex;
   align-items: center;
   border-right: 1px solid var(--lines);
-  transition: all ease .2s;
+  transition: all ease 0.2s;
 }
 .nav_menu ul li a {
   padding: 15px 30px;
 }
-:global(a.active){
+:global(a.active) {
   border-bottom: 2px solid var(--orange);
 }
-:global(a.active:hover){
+:global(a.active:hover) {
   border-bottom: none;
 }
 
-.nav_menu ul li:hover{
-  border-bottom: 2px solid rgba(254, 165, 95, 0.5)
+.nav_menu ul li:hover {
+  border-bottom: 2px solid rgba(254, 165, 95, 0.5);
 }
 
 /* MOBILE MENU */
@@ -41,13 +41,13 @@
   /* border: 1px solid red; */
 }
 .mobileButton::after {
-  content:'';
+  content: "";
   display: block;
   width: 1.9rem;
   height: 2px;
   background-color: currentColor;
   box-shadow: 0 6px currentColor, 0 -6px currentColor;
-  transition: .3s;
+  transition: 0.3s;
 }
 .mobileButton:focus,
 .mobileButton:hover {
@@ -60,18 +60,17 @@
   box-shadow: 0 8px currentColor, 0 -8px currentColor;
 }
 .navMobile {
-  display: block;
   position: absolute;
   width: 100%;
   height: calc(100% - 100px);
   top: 55px;
   right: 0px;
-  /* padding: 0 1.6rem; */
   border: 1px solid var(--lines);
   transform: translateX(-10px);
   opacity: 0;
   background-color: var(--card-background);
   pointer-events: none;
+  z-index: 1;
 }
 .navMobile ul {
   display: grid;
@@ -86,27 +85,28 @@
   width: 100%;
   border: none;
   color: var(--white);
+
+  /* border: 1px solid red; */
 }
 .navMobile ul li a:hover,
 .navMobile ul li a:focus,
 .navMobile ul li a:active {
-  background-color: rgba(255,255,255 .5);
+  /* background-color: rgba(255,255,255 .5); */
 }
 
 .navMobileActive {
-  transition: .3s;
+  transition: 0.3s;
   transform: initial;
   opacity: 1;
-  z-index: 100;
+  pointer-events: initial;
 }
 
-
 /* RESPONSIVITY */
-@media(max-width: 750px) {
+@media (max-width: 750px) {
   .btn_mobile {
     display: block;
   }
-  
+
   .nav {
     justify-content: space-between;
   }
@@ -117,4 +117,3 @@
     border: none;
   }
 }
-

@@ -1,4 +1,4 @@
-.container{
+.container {
   display: flex;
   position: relative;
   height: 84%;
@@ -21,7 +21,10 @@
 .stack {
   font-size: var(--subheadline);
   color: var(--blue);
-  font-weight: 450 ;
+  font-weight: 450;
+}
+.coment {
+  max-width: 65ch;
 }
 .snippets {
   color: var(--white);
@@ -47,7 +50,7 @@
   height: 450px;
   /* margin-left: 200px; */
   left: 200px;
-  opacity: .87;
+  opacity: 0.87;
   overflow: hidden;
   position: absolute;
   /* border: 1px solid red; */
@@ -58,14 +61,14 @@
 }
 
 .green_blur {
-width: 200px;
-height: 200px;
-background-color: var(--green);
-border-radius: 50%;
-position: absolute;
-top: 100px;
-right: 300px;
-filter: blur(130px);
+  width: 200px;
+  height: 200px;
+  background-color: var(--green);
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  right: 300px;
+  filter: blur(130px);
 }
 .blue_blur {
   width: 300px;
@@ -78,33 +81,31 @@ filter: blur(130px);
   filter: blur(130px);
 }
 
-@media(max-width:1350px){
+@media (max-width: 1350px) {
   .photo_container {
     left: 150px;
   }
 }
-@media(max-width:1300px){
+@media (max-width: 1300px) {
   .photo_container {
     left: 100px;
   }
 }
-@media(max-width:1250px){
+@media (max-width: 1250px) {
   .photo_container {
     left: 50px;
   }
 }
-@media(max-width:1200px){
+@media (max-width: 1200px) {
   .container {
     justify-content: center;
   }
   .photo_container {
-   display: none;
+    display: none;
   }
-
 }
 
-
-@media(max-width:800px){
+@media (max-width: 800px) {
   .text_side {
     /* border: 1px solid red; */
     padding: 0;

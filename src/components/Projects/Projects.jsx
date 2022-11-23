@@ -1,9 +1,9 @@
-import React from 'react';
-import Card from '../Card/Card';
-import styles from './Projects.module.css';
-import cloneflix_thumb from '../../assets/img/cloneflix_thumb.png';
-import dashboard_thumb from '../../assets/img/dashboard_thumb.png';
-import portifolio_thumb from '../../assets/img/portifolio_thumb.png';
+import React from "react";
+import Card from "../Card/Card";
+import styles from "./Projects.module.css";
+import cloneflix_thumb from "../../assets/img/cloneflix_thumb.png";
+import dashboard_thumb from "../../assets/img/dashboard_thumb.png";
+import portifolio_thumb from "../../assets/img/portifolio_thumb.png";
 
 const Projects = () => {
   return (
@@ -21,7 +21,7 @@ const Projects = () => {
               alt="Netflix thumbnail"
               description="Clone da página inicial da Netflix, desenvolvida com React, buscando dados através de API externa. (não é possivel reproduzir os titulos)"
               link="https://netflix-clone-b82icwbn8-alisonlim4.vercel.app/"
-            />{' '}
+            />{" "}
           </div>
           <div className={styles.card_container}>
             <Card

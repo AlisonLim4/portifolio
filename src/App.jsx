@@ -1,12 +1,12 @@
-import Button from './components/Button/Button';
-import React from 'react';
-import styles from './App.module.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Projects from './components/Projects/Projects';
+import Button from "./components/Button/Button";
+import React from "react";
+import styles from "./App.module.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 
 const App = () => {
   return (

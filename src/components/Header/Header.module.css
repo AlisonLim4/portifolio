@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   /* justify-content: space-between; */
   height: 56px;
@@ -14,14 +14,14 @@
   border-right: 1px solid var(--lines);
 }
 
-@media(max-width: 750px) {
+@media (max-width: 750px) {
   .nome_container {
     border: none;
   }
 }
 
-@media(max-width: 750px) {
+@media (max-width: 750px) {
   .nome_container {
     width: 90%;
-}
+  }
 }

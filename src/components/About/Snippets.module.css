@@ -4,43 +4,39 @@
   align-items: center;
   gap: 20px;
   padding: 30px;
-  width: 95%;
+  width: 90%;
   height: max-content;
   margin-top: 25%;
   margin-left: 28px;
   margin-bottom: 25%;
   border: 1px solid var(--lines);
   border-radius: 15px;
-  
 }
 
-.lines{
+.lines {
   display: flex;
   flex-direction: column;
   /* border: 1px solid red; */
-
 }
 .code {
   display: flex;
   flex-direction: column;
   /* border: 1px solid green; */
 }
-.teste{
+.teste {
   display: flex;
   gap: 5px;
 }
 
-
 /* CORES */
-.blue{
-  color:var(--blue)
+.blue {
+  color: var(--blue);
 }
-.pink{
-  color:var(--pink)
+.pink {
+  color: var(--pink);
 }
-.orange{
-  color:var(--orange)
+.orange {
+  color: var(--orange);
 }
 
 /* //RESPONSIVITY */
-

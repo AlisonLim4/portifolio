@@ -1,64 +1,61 @@
-import React, { useEffect, useState } from 'react';
-import styles from './About.module.css';
+import React, { useEffect, useState } from "react";
+import styles from "./About.module.css";
 import {
   RiArrowDownSFill,
-  RiTerminalBoxLine,
-  RiGamepadFill,
   RiContactsFill,
   RiWhatsappLine,
-} from 'react-icons/ri';
-import { AiFillSnippets, AiOutlineAudit } from 'react-icons/ai';
-import { HiAcademicCap } from 'react-icons/hi';
-import { FaMedal, FaUniversity } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
-import Contact from './content/Contact';
-import PersonalInfo from './content/PersonalInfo';
-import Education from './content/Education';
-import Interests from './content/Interests';
-import Snippets from './Snippets';
-import Button from '../Button/Button';
-import emailjs from '@emailjs/browser';
+} from "react-icons/ri";
+import { AiOutlineAudit } from "react-icons/ai";
+import { FaMedal } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import PersonalInfo from "./content/PersonalInfo";
+import Education from "./content/Education";
+import Interests from "./content/Interests";
+import Snippets from "./Snippets";
+import Button from "../Button/Button";
+import emailjs from "@emailjs/browser";
 
 const About = () => {
-  const [links, setLinks] = useState('');
+  const [links, setLinks] = useState("");
   const [content, setContent] = useState(<PersonalInfo />);
+
   //forms
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   //Date
   const date = Date();
 
   function handleClick({ target }) {
-    const iconeBio = document.querySelector('svg.bio_icon');
-    const iconeEducation = document.querySelector('svg.education_icon');
-    const iconeInterests = document.querySelector('svg.interests_icon');
-    const iconeEmail = document.querySelector('svg.email_icon');
-    const iconeTel = document.querySelector('svg.tel_icon');
+    const iconeBio = document.querySelector("svg.bio_icon");
+    const iconeEducation = document.querySelector("svg.education_icon");
+    const iconeInterests = document.querySelector("svg.interests_icon");
+    const iconeEmail = document.querySelector("svg.email_icon");
+    const iconeTel = document.querySelector("svg.tel_icon");
     const x = document
-      .querySelectorAll('p')
-      .forEach((p) => p.classList.remove('link_active'));
+      .querySelectorAll("p")
+      .forEach((p) => p.classList.remove("link_active"));
     // activeLink.forEach((link) => {
     //   link.classList.remove('link_active');
-    target.classList.add('link_active');
+    target.classList.add("link_active");
 
     //clear icon color
-    iconeBio.classList.remove('salmon');
-    iconeEducation.classList.remove('green');
-    iconeInterests.classList.remove('blue');
-    iconeEmail.classList.remove('orange');
-    iconeTel.classList.remove('green');
+    iconeBio.classList.remove("salmon");
+    iconeEducation.classList.remove("green");
+    iconeInterests.classList.remove("blue");
+    iconeEmail.classList.remove("orange");
+    iconeTel.classList.remove("green");
 
     //color respective icon
-    if (target.classList.contains('bio')) {
-      iconeBio.classList.add('salmon');
-    } else if (target.classList.contains('education')) {
-      iconeEducation.classList.add('green');
-    } else if (target.classList.contains('interests')) {
-      iconeInterests.classList.add('blue');
+    if (target.classList.contains("bio")) {
+      iconeBio.classList.add("salmon");
+    } else if (target.classList.contains("education")) {
+      iconeEducation.classList.add("green");
+    } else if (target.classList.contains("interests")) {
+      iconeInterests.classList.add("blue");
     } else {
-      iconeEmail.classList.add('orange');
-      iconeTel.classList.add('green');
+      iconeEmail.classList.add("orange");
+      iconeTel.classList.add("green");
     }
 
     setLinks(target);
@@ -68,34 +65,34 @@ const About = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        'gmailMessage',
-        'template_i6amadv',
+        "gmailMessage",
+        "template_i6amadv",
         e.target,
-        'h8bgj0NIr9g8ab_QG',
+        "h8bgj0NIr9g8ab_QG"
       )
       .then(
         (result) => {
-          alert('Mensagem enviada com sucesso!');
+          alert("Mensagem enviada com sucesso!");
         },
         (error) => {
           alert(error.message);
-        },
+        }
       );
     e.target.reset();
   }
 
   useEffect(() => {
     switch (links.innerText) {
-      case 'interests':
+      case "interests":
         setContent(<Interests />);
         break;
-      case 'bio':
+      case "bio":
         setContent(<PersonalInfo />);
         break;
-      case 'education':
+      case "education":
         setContent(<Education />);
         break;
-      case 'send email': {
+      case "send email": {
         setContent(
           <div className={styles.contact}>
             <form onSubmit={handleSubmit}>
@@ -126,9 +123,9 @@ const About = () => {
                   onChange={({ target }) => setMessage(target.value)}
                 ></textarea>
               </label>
-              <Button content={'submit-message'} />
+              <Button content={"submit-message"} />
             </form>
-          </div>,
+          </div>
         );
       }
     }
@@ -137,17 +134,6 @@ const About = () => {
   return (
     <section className={styles.container}>
       <div className={styles.left_side}>
-        {/* <div className={styles.lateral_icons}>
-          <div className={styles.icon_container}>
-            <RiTerminalBoxLine size={'24px'} className="bio_icon" />
-          </div>
-          <div className={styles.icon_container}>
-            <HiAcademicCap size={'24px'} className="education_icon" />
-          </div>
-          <div className={styles.icon_container}>
-            <RiGamepadFill size={'24px'} className="interests_icon" />
-          </div>
-        </div> */}
         <div className={styles.personal_info}>
           <div className={styles.personal_title}>
             <RiArrowDownSFill />
@@ -180,12 +166,13 @@ const About = () => {
           </div>
           <div className={styles.contacts}>
             <div className={styles.email}>
-              <MdEmail size={'20px'} className="email_icon" />
+              <MdEmail size={"20px"} className="email_icon" />
               <p onClick={handleClick}>send email</p>
             </div>
             <div className={styles.tel}>
-              <RiWhatsappLine size={'20px'} className="tel_icon" />
+              <RiWhatsappLine size={"20px"} className="tel_icon" />
               <a href="https://wa.me/5521982113759">(21) 98211-3759</a>
+              {/* <img src="./assets/img/clonefliex_thumb.png" alt="" /> */}
             </div>
           </div>
         </div>
