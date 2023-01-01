@@ -1,9 +1,9 @@
-import React from 'react';
-import { FaJava, FaNodeJs, FaUniversity } from 'react-icons/fa';
-import { RiCss3Fill, RiHtml5Fill, RiReactjsFill } from 'react-icons/ri';
-import { IoLogoJavascript } from 'react-icons/io';
-import { SiBootstrap, SiSass } from 'react-icons/si';
-import styles from './Education.module.css';
+import React from "react";
+import { FaJava, FaNodeJs, FaUniversity } from "react-icons/fa";
+import { RiCss3Fill, RiHtml5Fill, RiReactjsFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiBootstrap, SiSass } from "react-icons/si";
+import styles from "./Education.module.css";
 
 const Education = () => {
   return (

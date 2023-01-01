@@ -93,23 +93,25 @@
 }
 @media (max-width: 1250px) {
   .photo_container {
-    left: 50px;
+    display: none;
   }
 }
 @media (max-width: 1200px) {
   .container {
-    justify-content: center;
-  }
-  .photo_container {
-    display: none;
+    /* justify-content: center; */
   }
 }
 
 @media (max-width: 800px) {
   .text_side {
-    /* border: 1px solid red; */
     padding: 0;
     margin-left: 20px;
     align-items: center;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .text_side {
+    gap: 15px;
   }
 }

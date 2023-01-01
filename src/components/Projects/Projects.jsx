@@ -4,12 +4,13 @@ import styles from "./Projects.module.css";
 import cloneflix_thumb from "../../assets/img/cloneflix_thumb.png";
 import dashboard_thumb from "../../assets/img/dashboard_thumb.png";
 import portifolio_thumb from "../../assets/img/portifolio_thumb.png";
+import bikcraft_thumb from "../../assets/img/bikcraft_thumb.webp";
 
 const Projects = () => {
   return (
     <section>
       <div className={styles.title_active}>
-        <p>projects</p>
+        <p>projetos</p>
       </div>
       <div className={styles.container}>
         <div className={styles.cards}>
@@ -41,6 +42,18 @@ const Projects = () => {
               image={portifolio_thumb}
               alt="Portifolio thumbnail"
               description="site portifólio, para divulgação de projetos, e contatos com links para redes sociais e whatsapp. Este projeto é a página que você está navegando agora."
+            />
+          </div>
+
+          <div className={styles.card_container}>
+            <Card
+              title="Bikcraft"
+              stack="_front-end"
+              image={bikcraft_thumb}
+              alt="bikcraft thumbnail"
+              description="Site para uma loja fictícia especializada em bicicletas elétricas.
+              Design realizado no Figma, e página desenvolvida com HTML, CSS e Javascript"
+              link="https://alisonlim4.github.io/bikcraft/"
             />
           </div>
         </div>
